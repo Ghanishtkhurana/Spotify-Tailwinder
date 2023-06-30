@@ -7,12 +7,16 @@ import { VscAccount } from "react-icons/vsc";
 
 const GredientHeader = () => {
   return (
-    <div
-      className="bg-gradient-to-b from-green-500 from-10% text-[#B3B3B3] h-[80px] flex justify-between shadow-lg shadow-gray-900 z-10"
-    >
+    <div className="bg-gradient-to-b from-green-500 from-10% text-[#B3B3B3] h-[80px] flex justify-between shadow-lg shadow-gray-900 z-10">
       <div className="flex gap-2 m-4">
-        <NaviBtn icon={<MdKeyboardArrowLeft size={30} />} />
-        <NaviBtn icon={<MdKeyboardArrowRight size={30} />} />
+        <NaviBtn
+          classname={"h-[40px] w-[40px] bg-[#171717]"}
+          icon={<MdKeyboardArrowLeft size={30} />}
+        />
+        <NaviBtn
+          classname={"h-[40px] w-[40px] bg-[#171717]"}
+          icon={<MdKeyboardArrowRight size={30} />}
+        />
       </div>
       <div className="flex gap-2 m-4">
         <div className="bg-white text-black text-xs font-bold p-2 rounded-full w-[120px] h-[40px] flex gap-2 items-center justify-center align-middle">

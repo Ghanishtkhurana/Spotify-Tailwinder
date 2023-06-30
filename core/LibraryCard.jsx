@@ -1,8 +1,8 @@
 import React from "react";
 
-const LibraryCard = ({HeaderTxt="",contentTxt="",BtnTxt=""}) => {
+const LibraryCard = ({index,HeaderTxt="",contentTxt="",BtnTxt="",classname=""}) => {
   return (
-    <div className="bg-[#242424] p-4 rounded-lg flex flex-col gap-4 items-start text-xs">
+    <div style={{transitionDelay : `${index+3}00ms`}} className={`bg-[#242424] p-4 rounded-lg flex flex-col gap-4 items-start text-xs ${classname}`}>
       <div className="flex flex-col gap-1">
         <p className="text-white text-sm font-bold">
           {HeaderTxt}
